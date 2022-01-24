@@ -19,10 +19,9 @@ You can also activate [the RLR defense](https://ojs.aaai.org/index.php/AAAI/arti
 ```bash
 python federated.py --data=cifar10 --concent=1.0 --poison_frac=$poison_frac --attack=$attack --num_corrupt=$num_corrupt --rlr_threshold=$rlr_threshold
 ```
-
 where ```rlr_threshold``` is the threshold parameter of the defense (see the paper for more explanation).
-You can also change the aggregation function, local training epoch/batch sizes etc. by configuring the appropriate argument.
 
+You can also change the aggregation function, local training epoch/batch sizes etc. by configuring the appropriate argument.
 ```
 usage: federated.py [-h] [--data DATA] [--num_agents NUM_AGENTS] [--agent_frac AGENT_FRAC] [--aggr AGGR] [--rlr_threshold RLR_THRESHOLD] [--num_corrupt NUM_CORRUPT] [--rounds ROUNDS] [--local_ep LOCAL_EP] [--bs BS] [--server_lr SERVER_LR]
                     [--class_per_agent CLASS_PER_AGENT] [--attack ATTACK] [--base_class BASE_CLASS] [--target_class TARGET_CLASS] [--poison_frac POISON_FRAC] [--pattern_type PATTERN_TYPE] [--device DEVICE] [--num_workers NUM_WORKERS]
