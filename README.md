@@ -11,22 +11,16 @@ Then, you can measure fairness in the federated learning (FL) setting.
 ```python federated.py --data=cifar10 --concent=1.0``` where concent is the concentration parameter for Dirichlet distribution. The lower it is, the more non-IID the setting.
 
 Finally, you can run an attack, and look at the interplay between robustness, and fairness in the FL setting.
-
-
 ```bash
-python federated.py --data=cifar10 --concent=1.0 --poison_frac=0.5 --attack=2 --num_corrupt=1
+python federated.py --data=cifar10 --concent=1.0 --poison_frac=$poison_frac --attack=$attack --num_corrupt=$num_corrupt
 ```
 
-```attack=2``` indicates a backdoor attack, ```poison_frac=0.5``` indicates the agents will corrupt ```0.5``` of their local datasets, and ```num_corrupt=1``` indicates there will be ```1``` corrupt agent among all participants.
-
 You can also activate [the RLR defense](https://ojs.aaai.org/index.php/AAAI/article/view/17118), and observe how fairness and robustness change under it.
-
 ```bash
 python federated.py --data=cifar10 --concent=1.0 --poison_frac=$poison_frac --attack=$attack --num_corrupt=$num_corrupt --rlr_threshold=$rlr_threshold
 ```
 
 where ```rlr_threshold``` is the threshold parameter of the defense (see the paper for more explanation).
-
 You can also change the aggregation function, local training epoch/batch sizes etc. by configuring the appropriate argument.
 
 ```
