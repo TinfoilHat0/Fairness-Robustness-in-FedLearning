@@ -4,7 +4,7 @@ This is the code for TPS-ISA 2021 paper titled **The Impact of Data Distribution
 
 See ```src/runner.sh``` for some example usage, and to replicate our results, as well as to run your own experiments.
 
-For example, you can first run some experiments in the centralized setting to get some baselines values: 
+For example, you can first run some experiments in the centralized setting to get some baseline values: 
 ```python centralized.py --data=cifar10 --device=cuda:1``` which will train a model on CIFAR10 dataset.
 
 Then, you can measure fairness in the federated learning (FL) setting.
