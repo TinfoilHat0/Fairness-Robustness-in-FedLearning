@@ -1,6 +1,6 @@
 # Fairness-Robustness-in-FedLearning
 
-This is the code for our paper titled [The Impact of Data Distribution on Fairness and Robustness in Federated Learning](https://arxiv.org/abs/2112.01274) (TPS-ISA 2021). It has been tested with PyTorch 1.9.0.
+This is the code for our paper titled [The Impact of Data Distribution on Fairness and Robustness in Federated Learning](https://arxiv.org/abs/2112.01274) ([TPS-ISA 2021](http://www.sis.pitt.edu/lersais/conference/tps/2021/)). It has been tested with PyTorch 1.9.0.
 
 See ```src/runner.sh``` for some example usage, and to replicate our results, as well as to run your own experiments.
 
