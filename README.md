@@ -68,8 +68,7 @@ optional arguments:
   --concent CONCENT     concentration of dirichlet dist when doing niid sampling
  ```
  
- 
- If you use our paper in a way, please consider citing it.
+ ## Citation
  
  ```bibtex
  @article{ozdayi2021impact,
