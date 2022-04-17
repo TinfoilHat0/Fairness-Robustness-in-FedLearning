@@ -5,10 +5,16 @@ This is the code for our paper titled [The Impact of Data Distribution on Fairne
 See ```src/runner.sh``` for some example usage, and to replicate our results, as well as to run your own experiments.
 
 For example, you can first run some experiments in the centralized setting to get some baseline values: 
-```python centralized.py --data=cifar10 --device=cuda:1``` which will train a model on CIFAR10 dataset.
+```bash
+python centralized.py --data=cifar10 --device=cuda:1
+``` 
+which will train a model on CIFAR10 dataset.
 
 Then, you can measure fairness in the federated learning (FL) setting.
-```python federated.py --data=cifar10 --concent=1.0``` where concent is the concentration parameter for Dirichlet distribution. The lower it is, the more non-IID the setting.
+```bash
+python federated.py --data=cifar10 --concent=1.0
+```
+where concent is the concentration parameter for Dirichlet distribution. The lower it is, the more non-IID the setting.
 
 Finally, you can run an attack, and look at the interplay between robustness, and fairness in the FL setting.
 ```bash
